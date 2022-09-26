@@ -47,7 +47,6 @@
 		037A6D2A28C02B0E005DE446 = {
 			isa = PBXGroup;
 			children = (
-				03AE5DB828E25CFA004254A4 /* System */,
 				037A6D3528C02B0E005DE446 /* iMenu */,
 				037A6D3428C02B0E005DE446 /* Products */,
 			);
@@ -64,6 +63,8 @@
 		037A6D3528C02B0E005DE446 /* iMenu */ = {
 			isa = PBXGroup;
 			children = (
+				037A6D3628C02B0E005DE446 /* iMenuApp.swift */,
+				03AE5DB828E25CFA004254A4 /* System */,
 				03AE5DB728E25C80004254A4 /* ViewModel */,
 				03AE5DB628E25C77004254A4 /* View */,
 				03AE5DB528E25C6C004254A4 /* Model */,
@@ -86,7 +87,6 @@
 		03AE5DB528E25C6C004254A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				037A6D3628C02B0E005DE446 /* iMenuApp.swift */,
 				0371714A28C53E6E00AFE5DD /* StatusBarController.swift */,
 			);
 			path = Model;
