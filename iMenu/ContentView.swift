@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var date = Date()
     var body: some View {
-       Text("Hello")
+       Text("Hello ")
     }
 }
 
