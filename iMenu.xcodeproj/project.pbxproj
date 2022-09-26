@@ -12,6 +12,10 @@
 		037A6D3928C02B0E005DE446 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A6D3828C02B0E005DE446 /* ContentView.swift */; };
 		037A6D3B28C02B10005DE446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037A6D3A28C02B10005DE446 /* Assets.xcassets */; };
 		037A6D3E28C02B10005DE446 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037A6D3D28C02B10005DE446 /* Preview Assets.xcassets */; };
+		03AE5DBA28E25D27004254A4 /* SystemLoadMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AE5DB928E25D27004254A4 /* SystemLoadMonitor.swift */; };
+		03AE5DBC28E25D51004254A4 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AE5DBB28E25D51004254A4 /* CircleView.swift */; };
+		03AE5DBE28E25D9E004254A4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AE5DBD28E25D9E004254A4 /* ViewModel.swift */; };
+		03AE5DC028E25E36004254A4 /* BateryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AE5DBF28E25E36004254A4 /* BateryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		037A6D3A28C02B10005DE446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		037A6D3D28C02B10005DE446 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		037A6D3F28C02B10005DE446 /* iMenu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iMenu.entitlements; sourceTree = "<group>"; };
+		03AE5DB928E25D27004254A4 /* SystemLoadMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLoadMonitor.swift; sourceTree = "<group>"; };
+		03AE5DBB28E25D51004254A4 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		03AE5DBD28E25D9E004254A4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		03AE5DBF28E25E36004254A4 /* BateryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BateryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 		037A6D2A28C02B0E005DE446 = {
 			isa = PBXGroup;
 			children = (
+				03AE5DB828E25CFA004254A4 /* System */,
 				037A6D3528C02B0E005DE446 /* iMenu */,
 				037A6D3428C02B0E005DE446 /* Products */,
 			);
@@ -55,10 +64,10 @@
 		037A6D3528C02B0E005DE446 /* iMenu */ = {
 			isa = PBXGroup;
 			children = (
+				03AE5DB728E25C80004254A4 /* ViewModel */,
+				03AE5DB628E25C77004254A4 /* View */,
+				03AE5DB528E25C6C004254A4 /* Model */,
 				0371714928C533F700AFE5DD /* Info.plist */,
-				0371714A28C53E6E00AFE5DD /* StatusBarController.swift */,
-				037A6D3628C02B0E005DE446 /* iMenuApp.swift */,
-				037A6D3828C02B0E005DE446 /* ContentView.swift */,
 				037A6D3A28C02B10005DE446 /* Assets.xcassets */,
 				037A6D3F28C02B10005DE446 /* iMenu.entitlements */,
 				037A6D3C28C02B10005DE446 /* Preview Content */,
@@ -72,6 +81,41 @@
 				037A6D3D28C02B10005DE446 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03AE5DB528E25C6C004254A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				037A6D3628C02B0E005DE446 /* iMenuApp.swift */,
+				0371714A28C53E6E00AFE5DD /* StatusBarController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03AE5DB628E25C77004254A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				037A6D3828C02B0E005DE446 /* ContentView.swift */,
+				03AE5DBB28E25D51004254A4 /* CircleView.swift */,
+				03AE5DBF28E25E36004254A4 /* BateryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03AE5DB728E25C80004254A4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				03AE5DBD28E25D9E004254A4 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03AE5DB828E25CFA004254A4 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				03AE5DB928E25D27004254A4 /* SystemLoadMonitor.swift */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +146,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					037A6D3228C02B0E005DE446 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -145,8 +189,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				037A6D3928C02B0E005DE446 /* ContentView.swift in Sources */,
+				03AE5DBC28E25D51004254A4 /* CircleView.swift in Sources */,
 				0371714B28C53E6E00AFE5DD /* StatusBarController.swift in Sources */,
 				037A6D3728C02B0E005DE446 /* iMenuApp.swift in Sources */,
+				03AE5DC028E25E36004254A4 /* BateryView.swift in Sources */,
+				03AE5DBE28E25D9E004254A4 /* ViewModel.swift in Sources */,
+				03AE5DBA28E25D27004254A4 /* SystemLoadMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +234,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -246,6 +295,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -272,9 +322,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iMenu/iMenu.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"iMenu/Preview Content\"";
 				DEVELOPMENT_TEAM = 82CYP6YDK3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -300,9 +352,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iMenu/iMenu.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"iMenu/Preview Content\"";
 				DEVELOPMENT_TEAM = 82CYP6YDK3;
 				ENABLE_HARDENED_RUNTIME = YES;

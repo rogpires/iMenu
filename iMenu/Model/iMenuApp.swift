@@ -12,7 +12,7 @@ struct iMenuApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
       var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: ViewModel())
         }
     }
 }
@@ -21,8 +21,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var statusBar: StatusBarController?
     var popover = NSPopover.init()
 
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let contentView = ContentView()
+    @MainActor func applicationDidFinishLaunching(_ aNotification: Notification) {
+        let contentView = ContentView(vm: ViewModel())
         popover.contentSize = NSSize(width: 150, height: 150)
         popover.contentViewController = NSHostingController(rootView: contentView)
         statusBar = StatusBarController.init(popover)
