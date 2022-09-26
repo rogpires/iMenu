@@ -18,7 +18,7 @@ class StatusBarController {
         statusItem = statusBar.statusItem(withLength: 28.0)
         
         if let statusBarButton = statusItem.button {
-            statusBarButton.image = NSImage(systemSymbolName: "calendar", accessibilityDescription: "Chart Line")
+            statusBarButton.image = NSImage(systemSymbolName: "server.rack", accessibilityDescription: "Chart Line")
             statusBarButton.image?.size = NSSize(width: 18.0, height: 18.0)
             statusBarButton.image?.isTemplate = true
             statusBarButton.action = #selector(togglePopover(sender:))

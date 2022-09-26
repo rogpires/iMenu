@@ -54,10 +54,11 @@ struct ContentView: View {
             }
             
             //MARK: -- Create Tools
+            
+            //CPU 
+            Text("\(progressCpu.currentLoad)")
+            
             HStack {
-                
-                Text("\(progressCpu.currentLoad)")
-                
                 Image(systemName: "keyboard")
                     .font(.system(size: 20))
                 Text("Lock Keyboard")
