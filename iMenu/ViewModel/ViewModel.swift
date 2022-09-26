@@ -12,5 +12,6 @@ class ViewModel: ObservableObject {
     
     @Published var vm: [ViewModel] = []
     
-    var loadMonitor = SystemLoadMonitor() //monitor cpu
+    ///Monitor CPU
+    var loadMonitor = SystemLoadMonitor()
 }

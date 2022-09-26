@@ -14,7 +14,6 @@ struct CircleView: View {
     var hardware: String
     var systemName: String
     var percent: String
-   // var progress0: Double
     @State var progress0 = 0.0
     
     var body: some View {

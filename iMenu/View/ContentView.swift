@@ -11,13 +11,10 @@ import Cocoa
 struct ContentView: View {
     
     @StateObject private var vm: ViewModel
-    @State var alertSound = false
+    @State var keyLock = false
     @State private var progress = 0.0
-    @State private var date = Date()
-    @State var isRunning = false
-    @State var message = "Seja bem vindo"
     @StateObject private var progressCpu = SystemLoadMonitor()
-  
+    
     
     init(vm: ViewModel) {
         self._vm = StateObject(wrappedValue: vm)
@@ -35,6 +32,7 @@ struct ContentView: View {
             
             HStack {
                 
+                //MARK: -- Create ProgressRig
                 VStack{
                     ZStack {
                         CircleView(hardware: "CPU", systemName: "cpu", percent: "90%", progress0: Double(Float(progressCpu.currentLoad)))
@@ -55,6 +53,7 @@ struct ContentView: View {
                 
             }
             
+            //MARK: -- Create Tools
             HStack {
                 
                 Text("\(progressCpu.currentLoad)")
@@ -63,13 +62,13 @@ struct ContentView: View {
                     .font(.system(size: 20))
                 Text("Lock Keyboard")
                 Spacer()
-                Toggle("", isOn: $alertSound)
+                Toggle("", isOn: $keyLock)
                     .toggleStyle(.switch)
                     .focusable()
-                
-            }.padding()
+            }
+            .padding()
             
-            
+            //MARK: -- Create BateryView
             ZStack {
                 HStack {
                     Image(systemName: "computermouse")
@@ -88,7 +87,7 @@ struct ContentView: View {
                 }
             }
             
-            ///quit application
+            //MARK: -- Create Quit Button
             Button(action: {
                 NSApplication.shared.terminate(self)
             }) {
@@ -96,8 +95,6 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity)
             }.frame(maxWidth: .infinity)
                 .padding()
-            
-            
         }
         .frame(width: 300, height: 400)
     }
