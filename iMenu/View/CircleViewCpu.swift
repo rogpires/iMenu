@@ -1,13 +1,13 @@
 //
-//  CircleView.swift
+//  CircleViewCpu.swift
 //  iMenu
 //
-//  Created by Rogerio Pires on 26/09/22.
+//  Created by Rogerio Pires on 29/09/22.
 //
 
 import SwiftUI
 
-struct CircleView: View {
+struct CircleViewCpu: View {
     
     var color1 = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
     var color2 = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
@@ -27,7 +27,7 @@ struct CircleView: View {
                     .padding(10)
                 
                 Circle()
-                    .trim(from:0.0, to: min(progress0, 1.0))
+                    .trim(from:0.0, to: min(progress0, Double(progressCpu.currentLoad)))
                     .stroke(AngularGradient(gradient: Gradient(colors: [Color(color1), Color(color2)]), center: .center), style: StrokeStyle(lineWidth: 5, lineCap: .round, lineJoin: .round))
                     .rotationEffect(Angle(degrees: 270))
                     .animation(.easeInOut(duration: 1.0), value: progress0)
@@ -42,13 +42,15 @@ struct CircleView: View {
                     }
                 }
             }
-            Text(percent)
+            Text("\(progressCpu.currentLoad.formatted(.percent))")
+  
+            //Text(percent)
         }
     }
 }
 
-struct CircleView_Previews: PreviewProvider {
+struct CircleViewCpu_Previews: PreviewProvider {
     static var previews: some View {
-        CircleView(hardware: "CPU", systemName: "cpu", percent: "90%", progress0: 0.9)
+        CircleViewCpu(hardware: "CPU", systemName: "cpu", percent: "90%", progress0: 0.9)
     }
 }

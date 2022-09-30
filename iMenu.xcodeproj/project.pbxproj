@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033B584F28E6747E00AB5E69 /* CircleViewCpu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033B584E28E6747E00AB5E69 /* CircleViewCpu.swift */; };
 		0371714B28C53E6E00AFE5DD /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0371714A28C53E6E00AFE5DD /* StatusBarController.swift */; };
 		037A6D3728C02B0E005DE446 /* iMenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A6D3628C02B0E005DE446 /* iMenuApp.swift */; };
 		037A6D3928C02B0E005DE446 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A6D3828C02B0E005DE446 /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		033B584E28E6747E00AB5E69 /* CircleViewCpu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewCpu.swift; sourceTree = "<group>"; };
 		0371714928C533F700AFE5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0371714A28C53E6E00AFE5DD /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		037A6D3328C02B0E005DE446 /* iMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 				037A6D3828C02B0E005DE446 /* ContentView.swift */,
 				03AE5DBB28E25D51004254A4 /* CircleView.swift */,
 				03AE5DBF28E25E36004254A4 /* BateryView.swift */,
+				033B584E28E6747E00AB5E69 /* CircleViewCpu.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				037A6D3928C02B0E005DE446 /* ContentView.swift in Sources */,
 				03AE5DBC28E25D51004254A4 /* CircleView.swift in Sources */,
 				0371714B28C53E6E00AFE5DD /* StatusBarController.swift in Sources */,
+				033B584F28E6747E00AB5E69 /* CircleViewCpu.swift in Sources */,
 				037A6D3728C02B0E005DE446 /* iMenuApp.swift in Sources */,
 				03AE5DC028E25E36004254A4 /* BateryView.swift in Sources */,
 				03AE5DBE28E25D9E004254A4 /* ViewModel.swift in Sources */,

@@ -14,7 +14,7 @@ struct ContentView: View {
     @State var keyLock = false
     @State private var progress = 0.0
     @StateObject private var progressCpu = SystemLoadMonitor()
-    
+    var progress0 = 0.0
     
     init(vm: ViewModel) {
         self._vm = StateObject(wrappedValue: vm)
@@ -35,7 +35,7 @@ struct ContentView: View {
                 //MARK: -- Create ProgressRig
                 VStack{
                     ZStack {
-                        CircleView(hardware: "CPU", systemName: "cpu", percent: "90%", progress0: Double(Float(progressCpu.currentLoad)))
+                        CircleViewCpu(hardware: "CPU", systemName: "cpu", percent: "90%", progress0: 1.0)
                     }
                 }
                 
@@ -55,9 +55,7 @@ struct ContentView: View {
             
             //MARK: -- Create Tools
             
-            //CPU 
-            Text("\(progressCpu.currentLoad)")
-            
+            //CPU
             HStack {
                 Image(systemName: "keyboard")
                     .font(.system(size: 20))
