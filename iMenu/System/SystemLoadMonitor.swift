@@ -22,7 +22,7 @@ final class SystemLoadMonitor: ObservableObject {
     var updateTimer: Timer!
     let CPUUsageLock: NSLock = NSLock()
     
-    private let maxSampleCount = 24
+    private let maxSampleCount = 2 //24
     private var samples: [Float] = []
     
     @Published private(set) var currentLoad: Float = 0 {

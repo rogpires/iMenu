@@ -10,7 +10,7 @@ import SwiftUI
 struct CircleView: View {
     
     var color1 = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
-    var color2 = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+    var color2 = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
     var hardware: String
     var systemName: String
     var percent: String
@@ -22,7 +22,7 @@ struct CircleView: View {
             ZStack {
                 Circle()
                     .stroke(lineWidth: 5)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.black)
                     .opacity(0.1)
                     .padding(10)
                 

@@ -19,11 +19,24 @@
 		03AE5DC028E25E36004254A4 /* BateryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AE5DBF28E25E36004254A4 /* BateryView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		033B013D29BD69800098DC64 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		033B584E28E6747E00AB5E69 /* CircleViewCpu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewCpu.swift; sourceTree = "<group>"; };
 		0371714928C533F700AFE5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0371714A28C53E6E00AFE5DD /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
-		037A6D3328C02B0E005DE446 /* iMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		037A6D3328C02B0E005DE446 /* iMenu2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMenu2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		037A6D3628C02B0E005DE446 /* iMenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMenuApp.swift; sourceTree = "<group>"; };
 		037A6D3828C02B0E005DE446 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		037A6D3A28C02B10005DE446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,6 +46,7 @@
 		03AE5DBB28E25D51004254A4 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		03AE5DBD28E25D9E004254A4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		03AE5DBF28E25E36004254A4 /* BateryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BateryView.swift; sourceTree = "<group>"; };
+		03BA7D0629BD6C62000F4424 /* iMenuWindgetExtension copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iMenuWindgetExtension copy-Info.plist"; path = "/Users/rogeriopires/Documents/iMenu/iMenuWindgetExtension copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,13 +65,14 @@
 			children = (
 				037A6D3528C02B0E005DE446 /* iMenu */,
 				037A6D3428C02B0E005DE446 /* Products */,
+				03BA7D0629BD6C62000F4424 /* iMenuWindgetExtension copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		037A6D3428C02B0E005DE446 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				037A6D3328C02B0E005DE446 /* iMenu.app */,
+				037A6D3328C02B0E005DE446 /* iMenu2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,21 +139,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		037A6D3228C02B0E005DE446 /* iMenu */ = {
+		037A6D3228C02B0E005DE446 /* iMenu2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 037A6D4228C02B10005DE446 /* Build configuration list for PBXNativeTarget "iMenu" */;
+			buildConfigurationList = 037A6D4228C02B10005DE446 /* Build configuration list for PBXNativeTarget "iMenu2" */;
 			buildPhases = (
 				037A6D2F28C02B0E005DE446 /* Sources */,
 				037A6D3028C02B0E005DE446 /* Frameworks */,
 				037A6D3128C02B0E005DE446 /* Resources */,
+				033B013D29BD69800098DC64 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = iMenu;
+			name = iMenu2;
 			productName = iMenu;
-			productReference = 037A6D3328C02B0E005DE446 /* iMenu.app */;
+			productReference = 037A6D3328C02B0E005DE446 /* iMenu2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -148,7 +164,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					037A6D3228C02B0E005DE446 = {
@@ -156,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 037A6D2E28C02B0E005DE446 /* Build configuration list for PBXProject "iMenu" */;
+			buildConfigurationList = 037A6D2E28C02B0E005DE446 /* Build configuration list for PBXProject "iMenu2" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,7 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				037A6D3228C02B0E005DE446 /* iMenu */,
+				037A6D3228C02B0E005DE446 /* iMenu2 */,
 			);
 		};
 /* End PBXProject section */
@@ -256,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -311,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -323,10 +339,12 @@
 		037A6D4328C02B10005DE446 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iMenu/iMenu.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -337,14 +355,17 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iMenu/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rogpires.pires.iMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = imenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -353,10 +374,12 @@
 		037A6D4428C02B10005DE446 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iMenu/iMenu.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -367,14 +390,17 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iMenu/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rogpires.pires.iMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = imenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -383,7 +409,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		037A6D2E28C02B0E005DE446 /* Build configuration list for PBXProject "iMenu" */ = {
+		037A6D2E28C02B0E005DE446 /* Build configuration list for PBXProject "iMenu2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				037A6D4028C02B10005DE446 /* Debug */,
@@ -392,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		037A6D4228C02B10005DE446 /* Build configuration list for PBXNativeTarget "iMenu" */ = {
+		037A6D4228C02B10005DE446 /* Build configuration list for PBXNativeTarget "iMenu2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				037A6D4328C02B10005DE446 /* Debug */,

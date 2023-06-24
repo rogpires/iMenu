@@ -11,6 +11,7 @@ struct CircleViewCpu: View {
     
     var color1 = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
     var color2 = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+    var color3 = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
     var hardware: String
     var systemName: String
     var percent: String
@@ -21,14 +22,14 @@ struct CircleViewCpu: View {
         VStack{
             ZStack {
                 Circle()
-                    .stroke(lineWidth: 5)
-                    .foregroundColor(.gray)
+                    .stroke(lineWidth: 6)
+                    .foregroundColor(.black)
                     .opacity(0.1)
                     .padding(10)
                 
                 Circle()
                     .trim(from:0.0, to: min(progress0, Double(progressCpu.currentLoad)))
-                    .stroke(AngularGradient(gradient: Gradient(colors: [Color(color1), Color(color2)]), center: .center), style: StrokeStyle(lineWidth: 5, lineCap: .round, lineJoin: .round))
+                    .stroke(AngularGradient(gradient: Gradient(colors: [Color(color1), Color(color2), Color(color3)]), center: .center), style: StrokeStyle(lineWidth: 6 , lineCap: .round, lineJoin: .round))
                     .rotationEffect(Angle(degrees: 270))
                     .animation(.easeInOut(duration: 1.0), value: progress0)
                     .padding(10)
